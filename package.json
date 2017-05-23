@@ -27,6 +27,7 @@
     "apsl-react-native-button": "^3.0.0",
     "moment": "^2.14.1",
     "react-native-button": "^1.6.0",
+    "react-native-deprecated-custom-components": "^0.1.0",
     "react-native-gifted-spinner": "^0.0.5",
     "react-native-google-places-autocomplete": "^1.2.12",
     "react-timer-mixin": "^0.13.3",

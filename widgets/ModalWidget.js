@@ -3,11 +3,11 @@ import {
   View,
   Text,
   TouchableHighlight,
-  Navigator,
   Image,
   TouchableOpacity,
   PixelRatio,
 } from 'react-native';
+import { Navigator } from 'react-native-deprecated-custom-components';
 
 var WidgetMixin = require('../mixins/WidgetMixin');
 
