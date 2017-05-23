@@ -214,17 +214,7 @@ module.exports = {
     const isOptionWidget = this.props.type === 'OptionWidget'
     const shouldShowValidationImage = this.props.validationImage === true;
 
-    if(!hasValue && !hasImageProp && !isOptionWidget && shouldShowValidationImage && toValidate){
-      const imageSrc = require('../icons/info.png');
-
-      return (
-        <Image
-          style={this.getStyle('rowImage')}
-          resizeMode={Image.resizeMode.contain}
-          source={imageSrc}
-        />
-      );
-    } else if (hasValue && !hasImageProp && !isOptionWidget && shouldShowValidationImage && toValidate) {
+    if (hasValue && hasImageProp && !isOptionWidget && shouldShowValidationImage && toValidate) {
       const imageSrc = hasValidationErrors ? require('../icons/delete_sign.png'):require('../icons/checkmark.png');
 
       return (
@@ -244,15 +234,6 @@ module.exports = {
           style={this.getStyle('rowImage')}
           resizeMode={Image.resizeMode.contain}
           source={this.props.image}
-        />
-      );
-    } else if (shouldShowValidationImage && !isOptionWidget){
-      const imageSrc = require('../icons/check.png');
-      return (
-        <Image
-          style={this.getStyle('rowImage')}
-          resizeMode={Image.resizeMode.contain}
-          source={imageSrc}
         />
       );
     }
